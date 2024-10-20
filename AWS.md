@@ -56,8 +56,31 @@
 - We can use this to blacklist certain IP addresses to prevent things from coming in.
 
 This was our Basic NETWORKING SETUP
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ## Amazon EC2 Instance [Hosting Backend]
 - EC2 is basically like a server that we can just host anything we want.
-- For our inventory managment system, we are hosting the backend on EC2.
+- For our inventory managment system, we are hosting the backend on EC2 instance.
+- Create an EC2 instance and name it ec2-inventorymanagement-backend, and choose Amazon Linux for quick start.
+- keep instance type : t2.micro as it is free tier eligible.
+- create a keypair name - standard-keypair
+- In network settings, allow SSH traffic from anywhere (0.0.0.0/0)
+- Allow HTTPS traffic from internet.
+- Allow HTTP traffic from internet.
+- Associate Public subnet.
+- Enable Auto assign public IP
+
+### Security Groups
+- security group is a set of firewall rules that control traffic for your instance
+- We have different security groups attached with different services like EC2 and RDS
+- These security groups are like individual firewalls attached to specific services.
+- Add 3 security group rules 1,2,3 as SSH, HTTPS and HTTP respectively with source type Anywhere.
+
+Launch the EC2 Instance !!
+Connect the EC2 Instance to check the status !!
+
+# Inventory Management System - NextJS
+
+[DataBase Modelling diagram](https://drawsql.app/teams/sai-sathwik/diagrams/inventorymanagement-data)
+
+![image](https://github.com/user-attachments/assets/bf13cb24-ceb3-408f-8d8b-de53d4f7a63a)
