@@ -79,8 +79,3 @@ This was our Basic NETWORKING SETUP
 Launch the EC2 Instance !!
 Connect the EC2 Instance to check the status !!
 
-# Inventory Management System - NextJS
-
-[DataBase Modelling diagram](https://drawsql.app/teams/sai-sathwik/diagrams/inventorymanagement-data)
-
-![image](https://github.com/user-attachments/assets/bf13cb24-ceb3-408f-8d8b-de53d4f7a63a)
